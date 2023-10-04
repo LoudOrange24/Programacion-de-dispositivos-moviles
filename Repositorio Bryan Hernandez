@@ -1,0 +1,133 @@
+fun main(){
+    print("¡Hola, UPIICSA! ")
+    print("Ricardo Hernández, ¡Hola!")
+    println("Imprimiendo en println")
+    println("Otro println")
+}
+
+
+fun main(){
+    var numDecimal = 3.18;
+    println(numDecimal);
+}
+
+
+fun main(){
+    var floatDecimal = 3.18f;
+    println(floatDecimal);
+}
+
+
+fun main(){
+    var numDecimal = 1.56;
+    println(numDecimal);
+ // Const Val PI, multiplicación y String template
+    val PI = 3.1416;
+    val perimetro = PI * numDecimal;
+    val StringPer = "El perimetro del circulo es $perimetro"
+    println(StringPer);
+}
+
+
+fun main() {
+    fun login(user: String, password: String): Boolean{
+        fun validate(input: String): Boolean{
+            if (input.isEmpty()){
+                return false
+            }
+            return true
+            
+            
+        }
+        val userValidated = validate(user)
+        val passValidated = validate(password)
+    return userValidated && passValidated
+                          
+}
+    val userValidated = login("Juanito", "Navaja") //utilizar la funcion login y guardar el resultado en una...
+    println("Usuario loggeado? $userValidated")
+    
+    fun rectangleArea(base: Double= 20.0, height: Double= 30.0) : Double{
+        return base*height;
+    }
+    //correr area rectangulo con los valores por defecto
+    println("Area con valores por defecto: ${rectangleArea()}")
+    
+    //Area de rectangulo con base seteada y altura por defecto
+    println("Area con altura por defecto: ${rectangleArea(10.0)}")
+    
+    //Area de rectangulo por defecto y altura seteada con named arguments
+    println("Area con base por defecto :${rectangleArea(height = 10.0)}")
+    
+    //setear base y altura con named arguments
+    println("Area con datos determinados con named arguments: ${rectangleArea(height = 2.0,base=3.5)}")
+}
+
+
+fun main() {
+    fun login(user: String, password: String): Boolean{
+        fun validate(input: String): Boolean{
+            if (input.isEmpty()){
+                return false
+            }
+            return true
+            
+            
+        }
+        val userValidated = validate(user)
+        val passValidated = validate(password)
+    	return userValidated && passValidated
+                          
+	}
+    val userValidated = login("Juanito", "Navaja") //utilizar la funcion login y guardar el resultado en una...
+    println("Usuario loggeado? $userValidated")
+    
+    fun rectangleArea(base: Double= 20.0, height: Double= 30.0) : Double{
+        return base*height;
+    }
+    //correr area rectangulo con los valores por defecto
+    println("Area con valores por defecto: ${rectangleArea()}")
+    
+    //Area de rectangulo con base seteada y altura por defecto
+    println("Area con altura por defecto: ${rectangleArea(10.0)}")
+    
+    //Area de rectangulo por defecto y altura seteada con named arguments
+    println("Area con base por defecto :${rectangleArea(height = 10.0)}")
+    
+    //setear base y altura con named arguments
+    println("Area con datos determinados con named arguments: ${rectangleArea(height = 2.0,base=3.5)}")
+}
+
+
+import kotlin.math.pow
+const val PI = 3.1416f
+const val PHI = 1.618f
+fun main() {
+    val radius = 4f
+    val area = circleArea(radius)
+println("El area del circulo es: $area")
+                          
+}
+    fun circleArea(radius:Float): Float{
+    return PI*radius.pow(2)
+    
+}
+
+
+fun main() {
+val y2 = -2f;
+val y1 = 3f;
+val x2 = -3f;
+val x1 = 4f;
+    val m = (y2-y1)/(x2-x1);
+    println(m)
+}
+
+
+const val PI = 3.1416
+fun main() {
+    val decimal = 1.325F
+    val perimetro = 2*PI*decimal
+    println("El perimetro del circulo es: $perimetro")
+}
+
